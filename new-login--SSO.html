@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/new-login.css">
+
+  <title>New Login: Sign-in URL</title>
+</head>
+
+<body>
+
+  <div class="login" >
+    <div class="logoContainer" id="loginContainer">
+      <img src="https://cloud.securew2.com/public/68741/UNC-SecureW2-PKI/images/logo.png">
+    </div>
+    <div class="form-wrapper" id="loginDiv">
+      <span class="signin-heading">Sign In</span>
+      <form role="form" id="form1" ng-submit="login()" autocomplete="off" novalidate=""
+        class="ng-invalid ng-invalid-required ng-dirty ng-valid-parse ng-submitted">
+        <table>
+          <tbody>
+            <tr>
+              <td></td>
+              <td><p style="line-height: 1.4;">Welcome to SecureW2, click next to Login to the SecureW2 Management Portal using your Organization's Single-Sign On page.   </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input id="signInButton" type="submit" value="Next"></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td><input type="checkbox" id="toc">I Agree to the <a href="https://cloud.securew2.com/public/general/termsAndConditions.html" style="display: contents;
+            font-weight: 700;">Terms and Conditions</a><br>
+              </td>
+
+            </tr>
+
+          </tbody>
+        </table>
+</form>
+    </div>
+    <div class="bottom-details">
+      <a ng-href="https://cloud.securew2.com/resetpassword/"
+          href="https://cloud.securew2.com/resetpassword/">Use Another Account</a></td>
+    </div>
+
+  </div>
+
+  <footer>
+    <div class="footer-container">
+      <span class="left">Powered by <a href="https://www.securew2.com/">SecureW2</a></span>
+      <div class="policy">
+        <a href="https://cloud.securew2.com/public/general/privacy-policy.html">Privacy Policy</a>
+        <a href="https://cloud.securew2.com/public/general/termsAndConditions.html">Terms of Use</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
