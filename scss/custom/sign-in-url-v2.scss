@@ -2,29 +2,28 @@
 
 form {
 
-    &:last-child{
+    &:last-child {
         display: flex;
 
-        table{
-            tbody{
-                tr{
-                    td{
+        table {
+            tbody {
+                tr {
+                    td {
                         margin-top: 4px;
                         display: flex;
                         justify-content: center;
 
-                        input[type="checkbox"]{
+                        input[type="checkbox"] {
                             width: auto;
                             margin-right: 8px;
                         }
 
-                        
+
                     }
                 }
             }
         }
     }
-
 
     table {
 
@@ -32,9 +31,9 @@ form {
             tr {
 
                 &:not(:last-child),
-                &:not(:first-child){
-                    td{
-                        &:first-child{
+                &:not(:first-child) {
+                    td {
+                        &:first-child {
                             display: none;
                         }
                     }
@@ -45,14 +44,13 @@ form {
 
                     &:first-child {
                         display: block;
-                        
+
                     }
                 }
             }
         }
     }
 }
-
 
 .login {
     position: relative;
@@ -188,6 +186,3 @@ form {
     }
 
 }
-
-
-

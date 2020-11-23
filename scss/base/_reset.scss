@@ -29,10 +29,6 @@ h6 {
   padding: 0;
 }
 
-main {
-  display: block;
-}
-
 a {
   background-color: transparent;
 
@@ -42,60 +38,6 @@ hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
-}
-
-pre {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-abbr[title] {
-  border-bottom: none;
-  text-decoration: underline;
-  text-decoration: underline dotted;
-}
-
-code,
-kbd,
-samp {
-  font-family: monospace, monospace;
-  font-size: 1em;
-}
-
-small {
-  font-size: 80%;
-}
-
-sub,
-sup {
-  font-size: 75%;
-  line-height: 0;
-  position: relative;
-  vertical-align: baseline;
-}
-
-sub {
-  bottom: -0.25em;
-}
-
-sup {
-  top: -0.5em;
-}
-
-progress {
-  vertical-align: baseline;
-}
-
-fieldset {
-  padding: 0;
-}
-
-legend {
-  color: inherit;
-  display: table;
-  max-width: 100%;
-  padding: 0;
-  white-space: normal;
 }
 
 img {
