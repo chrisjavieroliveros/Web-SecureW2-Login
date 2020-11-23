@@ -6,6 +6,7 @@
 form {
     table {
         width: 100%;
+
         tbody {
             tr {
                 td {
@@ -14,6 +15,16 @@ form {
                         display: none;
                     }
                 }
+            }
+
+
+            #password-error {
+                display: flex;
+                color: getColor(Crimson);
+                margin-top: 8px;
+                font-size: 12px;
+                font-weight: 700;
+                justify-content: center;
             }
         }
     }
