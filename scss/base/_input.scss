@@ -41,6 +41,10 @@ input[type="submit"] {
     margin-top: 8px;
 }
 
+#signInButton2{
+    background-color: getColor(Coal);
+}
+
 input[type="submit"]:hover {
     background-color: #9B1D1C;
     cursor: pointer;
@@ -55,4 +59,13 @@ input {
     outline: none;
     margin-bottom: 8px;
     border-radius: 4px;
+}
+
+input[value]{
+
+    &[data-ng-model='credentials.username'],
+    &[data-ng-model='credentials.password']{
+        padding-left: 44px;
+    }
+   
 }

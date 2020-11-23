@@ -2,3 +2,19 @@
     Set default global style for table element:
     e.g. <table></table>, .table
 */
+
+form {
+    table {
+        width: 100%;
+        tbody {
+            tr {
+                td {
+
+                    &:first-child {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

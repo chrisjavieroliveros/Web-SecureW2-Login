@@ -1,25 +1,5 @@
 @import '../main';
 
-form {
-    table {
-        width: 100%;
-
-        tbody {
-            tr {
-                td {
-
-                    input[value]{
-                        padding-left: 44px;
-                    }
-
-                    &:first-child {
-                        display: none;
-                    }
-                }
-            }
-        }
-    }
-}
 
 .login {
     position: relative;
@@ -247,51 +227,6 @@ form {
             text-decoration: none;
             font-weight: 700;
             color: #C02524;
-        }
-    }
-}
-
-footer {
-    position: relative;
-    width: 100%;
-    background-color: white;
-    z-index: 2;
-
-    .footer-container {
-        height: 56px;
-        display: flex;
-        justify-content: space-between;
-        padding: 16px 80px;
-
-        .left {
-            display: flex;
-
-            a {
-                margin-left: 4px;
-            }
-        }
-
-        .policy {
-            display: flex;
-
-            a {
-                margin: 0 8px;
-                font-weight: normal;
-                color: #4A4848;
-            }
-        }
-    }
-
-    @include sm {
-        .footer-container {
-            height: 74px;
-            padding: 16px 24px;
-            flex-direction: column;
-            align-items: center;
-
-            .left {
-                margin-bottom: 4px;
-            }
         }
     }
 }

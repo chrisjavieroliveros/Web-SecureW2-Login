@@ -1,1 +1,193 @@
 @import '../main';
+
+form {
+
+    &:last-child{
+        display: flex;
+
+        table{
+            tbody{
+                tr{
+                    td{
+                        margin-top: 4px;
+                        display: flex;
+                        justify-content: center;
+
+                        input[type="checkbox"]{
+                            width: auto;
+                            margin-right: 8px;
+                        }
+
+                        
+                    }
+                }
+            }
+        }
+    }
+
+
+    table {
+
+        tbody {
+            tr {
+
+                &:not(:last-child),
+                &:not(:first-child){
+                    td{
+                        &:first-child{
+                            display: none;
+                        }
+                    }
+                }
+
+
+                td {
+
+                    &:first-child {
+                        display: block;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.login {
+    position: relative;
+    height: calc(100% - 56px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 24px;
+    z-index: 1;
+
+    .logoContainer {
+        height: 56px;
+
+        img {
+            height: 100%;
+            mix-blend-mode: darken
+        }
+    }
+
+    .form-wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        max-width: 400px;
+        background: #ffffff;
+        padding: 32px 24px;
+        border: 1px solid #EBEBEB;
+        border-radius: 4px;
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+        margin-top: 32px;
+        margin-bottom: 24px;
+
+        .signin-heading {
+            margin-bottom: 24px;
+            font-weight: 700;
+            font-size: 16px;
+        }
+
+        form {
+            .form-body {
+                .form-fields {
+                    display: flex;
+                    list-style-type: none;
+                    border: 1px solid #EBEBEB;
+                    border-radius: 4px;
+
+                    .dot {
+                        background-color: #FAFAFA;
+                        border-left: 1px solid #E6E6E6;
+                        border-right: 1px solid #E6E6E6;
+                        font-size: 16px;
+                        font-weight: bold;
+                        padding: 10px 10px;
+                        display: flex;
+                        align-items: flex-end;
+                    }
+
+                    .input-group {
+                        width: calc(50% - 12px);
+                    }
+
+                    #select {
+                        position: relative;
+                        display: flex;
+                        margin-left: 12px;
+
+                        select {
+
+                            width: calc(100% - 12px);
+                            border: none;
+                            outline: none;
+
+                        }
+                    }
+
+                    input {
+                        font-weight: 300;
+                        color: #4A4848;
+                        padding: 14px 16px;
+                        border: none;
+                        outline: none;
+                    }
+                }
+
+                .btn-primary {
+                    width: 100%;
+                    margin: 0;
+                    margin-top: 16px;
+                    font-weight: 300;
+                    background-color: #c33329;
+                    border: none;
+                    color: #ffffff;
+                    border-radius: 3px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    padding: 12px 18px;
+
+                    &:hover {
+                        background-color: #9B1D1C;
+                        cursor: pointer;
+                        outline: none;
+                    }
+                }
+
+                .url-link {
+                    margin-top: 16px;
+                    display: block;
+                    text-decoration: none;
+                    font-weight: 700;
+                    color: #C02524;
+                }
+            }
+        }
+
+    }
+
+    .bottom-details {
+        max-width: 320px;
+        width: 100%;
+        text-align: center;
+
+        .web-resources {
+            font-weight: 700;
+        }
+
+    }
+
+    @include sm {
+        height: calc(100% - 74px);
+    }
+
+}
+
+
+
