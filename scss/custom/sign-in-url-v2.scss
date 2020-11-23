@@ -59,9 +59,11 @@ form {
         table {
             tr {
                 td {
+                    width: 50%;
                     &:nth-of-type(1) {
                         input {
                             margin-right: 4px;
+                            
                         }
                     }
 
@@ -135,82 +137,6 @@ form {
             font-size: 16px;
         }
 
-        form {
-            .form-body {
-                .form-fields {
-                    display: flex;
-                    list-style-type: none;
-                    border: 1px solid #EBEBEB;
-                    border-radius: 4px;
-
-                    .dot {
-                        background-color: #FAFAFA;
-                        border-left: 1px solid #E6E6E6;
-                        border-right: 1px solid #E6E6E6;
-                        font-size: 16px;
-                        font-weight: bold;
-                        padding: 10px 10px;
-                        display: flex;
-                        align-items: flex-end;
-                    }
-
-                    .input-group {
-                        width: calc(50% - 12px);
-                    }
-
-                    #select {
-                        position: relative;
-                        display: flex;
-                        margin-left: 12px;
-
-                        select {
-
-                            width: calc(100% - 12px);
-                            border: none;
-                            outline: none;
-
-                        }
-                    }
-
-                    input {
-                        font-weight: 300;
-                        color: #4A4848;
-                        padding: 14px 16px;
-                        border: none;
-                        outline: none;
-                    }
-                }
-
-                .btn-primary {
-                    width: 100%;
-                    margin: 0;
-                    margin-top: 16px;
-                    font-weight: 300;
-                    background-color: #c33329;
-                    border: none;
-                    color: #ffffff;
-                    border-radius: 3px;
-                    font-size: 14px;
-                    font-weight: bold;
-                    padding: 12px 18px;
-
-                    &:hover {
-                        background-color: #9B1D1C;
-                        cursor: pointer;
-                        outline: none;
-                    }
-                }
-
-                .url-link {
-                    margin-top: 16px;
-                    display: block;
-                    text-decoration: none;
-                    font-weight: 700;
-                    color: #C02524;
-                }
-            }
-        }
-
         @include sm {
             padding: 24px 16px;
         }
@@ -221,10 +147,6 @@ form {
         max-width: 320px;
         width: 100%;
         text-align: center;
-
-        .web-resources {
-            font-weight: 700;
-        }
 
     }
 
