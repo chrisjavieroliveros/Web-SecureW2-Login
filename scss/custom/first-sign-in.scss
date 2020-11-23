@@ -44,9 +44,24 @@
             table {
                 tr {
                     td {
+
+                        &:first-child {
+                            display: none;
+                        }
+
                         input {
                             width: 100%;
                         }
+
+                    }
+
+                    &#password-error {
+                        display: flex;
+                        margin-top: 8px;
+                        color: getColor(Crimson);
+                        font-size: 12px;
+                        font-weight: 700;
+                        justify-content: center;
                     }
                 }
             }

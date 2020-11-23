@@ -2,31 +2,7 @@
 
 form {
 
-    &:last-child {
-        display: flex;
-
-        table {
-            tbody {
-                tr {
-                    td {
-                        margin-top: 4px;
-                        display: flex;
-                        justify-content: center;
-
-                        input[type="checkbox"] {
-                            width: auto;
-                            margin-right: 8px;
-                        }
-
-
-                    }
-                }
-            }
-        }
-    }
-
     table {
-
         tbody {
             tr {
 
@@ -41,8 +17,7 @@ form {
 
 
                 td {
-
-                    &:first-child {
+                    input &:first-child {
                         display: block;
 
                     }
@@ -50,6 +25,48 @@ form {
             }
         }
     }
+
+
+    &:nth-of-type(1) {
+
+        table {
+            tr {
+                &#password-error {
+                    display: flex;
+                    color: getColor(Crimson);
+                    font-size: 12px;
+                    font-weight: 700;
+                    justify-content: center;
+                    margin: 12px 0;
+                }
+
+                td {
+                    input {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    &:nth-of-type(3) {
+        display: flex;
+
+        table {
+            tbody {
+                tr {
+                    td {
+                        #toc {
+                            margin-top: 12px;
+                            margin-right: 8px;
+                            transform: translateY(2px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 .login {
