@@ -33,6 +33,10 @@
               <td><input type="password" id="password" data-ng-model="credentials.password" autocomplete="off" size="30"
                   class="ng-valid ng-touched ng-not-empty ng-dirty ng-valid-parse" value="password"></td>
             </tr>
+            <tr id="password-error">
+              <td></td>
+              <td>Wrong password. Try again or click Forgot Password below to reset it.</td>
+            </tr>
           </tbody>
         </table>
       </form>
@@ -41,10 +45,6 @@
           <tr>
             <td><input id="signInButton2" type="submit" value="Go Back"></td>
             <td><input id="signInButton" type="submit" value="Sign In"></td>
-          </tr>
-          <tr id="password-error">
-            <td></td>
-            <td>Wrong Password. Try again or click Forgot Password below to reset it.</td>
           </tr>
         </table>
       </form>
