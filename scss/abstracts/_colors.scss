@@ -1,6 +1,11 @@
-$colors: (primary: #3880ff,
-  secondary: #0cd1e8,
-  tertiary: #7044ff);
+$colors: (
+  Light: #ffffff,
+  Dark: #222,
+  Ashen: #fafafa,
+  Gray: #9A9A9A,
+  Coal: #646464,
+  Crimson: #c1171b,
+);
 
 @each $color,
 $value in $colors {

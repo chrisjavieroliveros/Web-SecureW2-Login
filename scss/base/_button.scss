@@ -16,3 +16,61 @@
 button {
   @extend %button-default;
 }
+
+
+button,
+a {
+    &.rs-button {
+        font-family: 'Roboto', sans-serif;
+        border: none;
+        border: 1px solid transparent;
+        padding: 10px 35px;
+        background-color: getColor(Dark) !important;
+        color: getColor(Light) !important;
+        font-weight: 300 !important;
+
+        a {
+            text-decoration: none;
+            color: getColor(Light);
+        }
+
+        &:hover {
+            border: 1px solid getColor(Dark);
+            background-color: getColor(Light) !important;
+            color: getColor(Dark) !important;
+
+            a {
+                color: getColor(Dark);
+            }
+        }
+
+        &.lg {
+            font-size: 16px;
+            padding: 15px 35px;
+        }
+
+        &.bg-crimson {
+            background-color: getColor(Crimson) !important;
+            color: getColor(Light) !important;
+
+            &:hover {
+                border: 1px solid getColor(Light);
+                background-color: getColor(Light) !important;
+                color: getColor(Crimson) !important;
+            }
+        }
+
+        &.outline{
+            border: 1px solid getColor(Gray);
+            background-color: transparent!important;
+            color: getColor(Coal)!important;
+            // padding: 14px 28px;
+
+            &:hover{
+                background-color: getColor(Dark)!important;
+                color: getColor(Light)!important;
+            }
+        }
+
+    }
+}
