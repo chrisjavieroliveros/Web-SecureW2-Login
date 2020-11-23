@@ -5,7 +5,7 @@
 
 input {
     width: 100%;
-
+    outline: 1px solid red;
 
     &[data-ng-model='credentials.username'] {}
 
@@ -41,8 +41,8 @@ input {
     font-weight: 300;
     color: #4A4848;
     padding: 14px 16px;
-    border: 1px solid #EBEBEB !important;
+    border: 1px solid #EBEBEB;
     outline: none;
     margin-bottom: 8px;
-    border-radius: 4px !important;
+    border-radius: 4px;
 }
