@@ -211,6 +211,10 @@ form {
             }
         }
 
+        @include sm {
+            padding: 24px 16px;
+        }
+
     }
 
     .bottom-details {
