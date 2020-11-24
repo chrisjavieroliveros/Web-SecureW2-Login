@@ -21,7 +21,7 @@ input {
     }
 
     &.ng-dirty.ng-invalid {
-        border: 1px solid getColor(Crimson);
+        border: 2px solid getColor(Crimson);
     }
 
 }
