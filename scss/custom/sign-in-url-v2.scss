@@ -67,6 +67,15 @@ form {
     &:nth-of-type(2) {
 
 
+
+        #signInButton2 {
+            background-color: getColor(Coal);
+
+            &:hover {
+                background-color: shade(getColor(Coal), 30);
+            }
+        }
+
         input[type='submit'] {
             width: 100%;
         }
