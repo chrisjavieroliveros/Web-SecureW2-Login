@@ -1,86 +1,90 @@
-@import '../main';
+@import "../main";
 
 .login {
-    position: relative;
-    height: calc(100% - 56px);
-    width: 100%;
+  position: relative;
+  height: calc(100% - 56px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 24px;
+  z-index: 1;
+
+  .logoContainer {
+    height: 56px;
+
+    img {
+      height: 100%;
+      mix-blend-mode: darken;
+    }
+  }
+
+  .form-wrapper {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    padding: 0 24px;
-    z-index: 1;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    padding: 32px 24px;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    margin-top: 32px;
+    margin-bottom: 24px;
 
-    .logoContainer {
-        height: 56px;
-
-        img {
-            height: 100%;
-            mix-blend-mode: darken
-        }
+    .signin-heading {
+      margin-bottom: 24px;
+      font-weight: 700;
+      font-size: 16px;
     }
 
-    .form-wrapper {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-        max-width: 400px;
-        background: #ffffff;
-        padding: 32px 24px;
-        border: 1px solid #EBEBEB;
-        border-radius: 4px;
-        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-        margin-top: 32px;
-        margin-bottom: 24px;
-
-        .signin-heading {
-            margin-bottom: 24px;
-            font-weight: 700;
-            font-size: 16px;
-        }
-
-        form {
-            table {
-                tr {
-                    td {
-
-                        &:first-child {
-                            display: none;
-                        }
-
-                        input {
-                            width: 100%;
-                        }
-
-                    }
-
-                    &#password-error {
-                        display: flex;
-                        margin-top: 8px;
-                        color: getColor(Crimson);
-                        font-size: 12px;
-                        font-weight: 700;
-                        justify-content: center;
-                    }
-                }
+    form {
+      table {
+        tr {
+          &:first-child {
+            td {
+              input {
+                margin-bottom: 8px;
+              }
             }
+          }
+
+          td {
+            &:first-child {
+              display: none;
+            }
+
+            input {
+              width: 100%;
+            }
+          }
+
+          &#password-error {
+            display: flex;
+            margin-top: 8px;
+            color: getColor(Crimson);
+            font-size: 12px;
+            font-weight: 700;
+            justify-content: center;
+          }
         }
-
-        @include sm {
-            padding: 24px 16px;
-        }
-
-    }
-
-    .bottom-details {
-        max-width: 320px;
-        width: 100%;
-        text-align: center;
+      }
     }
 
     @include sm {
-        height: calc(100% - 74px);
+      padding: 24px 16px;
     }
+  }
 
+  .bottom-details {
+    max-width: 320px;
+    width: 100%;
+    text-align: center;
+  }
+
+  @include sm {
+    height: calc(100% - 74px);
+  }
 }

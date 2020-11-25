@@ -1,183 +1,177 @@
-@import '../main';
+@import "../main";
 
 form {
+  table {
+    tbody {
+      tr {
+        &:not(:last-child),
+        &:not(:first-child) {
+          td {
+            &:first-child {
+              display: none;
+            }
+          }
+        }
+
+        td {
+          input &:first-child {
+            display: block;
+          }
+        }
+
+        &:first-child {
+          td {
+            input {
+              margin-bottom: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &:nth-of-type(1) {
+    table {
+      tr {
+        &#password-error {
+          display: flex;
+          color: getColor(Crimson);
+          font-size: 12px;
+          font-weight: 700;
+          justify-content: center;
+          margin: 12px 0;
+
+          td {
+            &:nth-child(2) {
+              display: flex;
+              align-items: center;
+
+              svg {
+                margin-right: 4px;
+              }
+            }
+          }
+        }
+
+        td {
+          input {
+            &[type="text"],
+            &[type="submit"],
+            &[type="password"] {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &:nth-of-type(2) {
+    #signInButton2 {
+      background-color: getColor(Coal);
+
+      &:hover {
+        background-color: shade(getColor(Coal), 30);
+      }
+    }
+
+    input[type="submit"] {
+      width: 100%;
+    }
 
     table {
-        tbody {
-            tr {
+      tr {
+        td {
+          width: 50%;
 
-                &:not(:last-child),
-                &:not(:first-child) {
-                    td {
-                        &:first-child {
-                            display: none;
-                        }
-                    }
-                }
-
-
-                td {
-                    input &:first-child {
-                        display: block;
-
-                    }
-                }
+          &:nth-of-type(1) {
+            input {
+              margin-right: 4px;
             }
-        }
-    }
+          }
 
-
-    &:nth-of-type(1) {
-        table {
-            tr {
-                &#password-error {
-                    display: flex;
-                    color: getColor(Crimson);
-                    font-size: 12px;
-                    font-weight: 700;
-                    justify-content: center;
-                    margin: 12px 0;
-
-                    td {
-                        &:nth-child(2) {
-                            display: flex;
-                            align-items: center;
-
-                            svg {
-                                margin-right: 4px;
-                            }
-                        }
-                    }
-                }
-
-                td {
-                    input {
-
-                        &[type='text'],
-                        &[type='submit'],
-                        &[type='password'] {
-                            width: 100%;
-                        }
-                    }
-                }
+          &:nth-of-type(2) {
+            input {
+              margin-left: 4px;
             }
+          }
         }
+      }
     }
+  }
 
-    &:nth-of-type(2) {
+  &:nth-of-type(3) {
+    display: flex;
+  }
 
-
-
-        #signInButton2 {
-            background-color: getColor(Coal);
-
-            &:hover {
-                background-color: shade(getColor(Coal), 30);
-            }
+  /* TOC */
+  table {
+    tbody {
+      tr {
+        td {
+          #toc {
+            width: max-content;
+            margin-top: 12px;
+            margin-right: 8px;
+          }
         }
-
-        input[type='submit'] {
-            width: 100%;
-        }
-
-        table {
-            tr {
-                td {
-                    width: 50%;
-
-                    &:nth-of-type(1) {
-                        input {
-                            margin-right: 4px;
-
-                        }
-                    }
-
-                    &:nth-of-type(2) {
-                        input {
-                            margin-left: 4px;
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
-
-    &:nth-of-type(3) {
-        display: flex;
-    }
-
-
-    /* TOC */
-    table {
-        tbody {
-            tr {
-                td {
-                    #toc {
-                        margin-top: 12px;
-                        margin-right: 8px;
-                    }
-                }
-            }
-        }
-    }
-
+  }
 }
 
 .login {
-    position: relative;
-    height: calc(100% - 56px);
-    width: 100%;
+  position: relative;
+  height: calc(100% - 56px);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 24px;
+  z-index: 1;
+
+  .logoContainer {
+    height: 56px;
+
+    img {
+      height: 100%;
+      mix-blend-mode: darken;
+    }
+  }
+
+  .form-wrapper {
     display: flex;
-    align-items: center;
-    justify-content: center;
     flex-direction: column;
-    padding: 0 24px;
-    z-index: 1;
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    padding: 32px 24px;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+    margin-top: 32px;
+    margin-bottom: 24px;
 
-    .logoContainer {
-        height: 56px;
-
-        img {
-            height: 100%;
-            mix-blend-mode: darken
-        }
-    }
-
-    .form-wrapper {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        width: 100%;
-        max-width: 400px;
-        background: #ffffff;
-        padding: 32px 24px;
-        border: 1px solid #EBEBEB;
-        border-radius: 4px;
-        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-        margin-top: 32px;
-        margin-bottom: 24px;
-
-        .signin-heading {
-            margin-bottom: 24px;
-            font-weight: 700;
-            font-size: 16px;
-        }
-
-        @include sm {
-            padding: 24px 16px;
-        }
-
-    }
-
-    .bottom-details {
-        max-width: 320px;
-        width: 100%;
-        text-align: center;
-
+    .signin-heading {
+      margin-bottom: 24px;
+      font-weight: 700;
+      font-size: 16px;
     }
 
     @include sm {
-        height: calc(100% - 74px);
+      padding: 24px 16px;
     }
+  }
 
+  .bottom-details {
+    max-width: 320px;
+    width: 100%;
+    text-align: center;
+  }
+
+  @include sm {
+    height: calc(100% - 74px);
+  }
 }

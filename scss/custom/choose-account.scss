@@ -1,4 +1,4 @@
-@import '../main';
+@import "../main";
 
 .login {
   position: relative;
@@ -28,7 +28,7 @@
     max-width: 400px;
     background: #ffffff;
     padding: 32px 24px;
-    border: 1px solid #EBEBEB;
+    border: 1px solid #ebebeb;
     border-radius: 4px;
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
     margin-top: 32px;
@@ -43,7 +43,6 @@
     @include sm {
       padding: 24px 16px;
     }
-
   }
 
   .bottom-details {
@@ -55,7 +54,6 @@
   @include sm {
     height: calc(100% - 74px);
   }
-
 }
 
 .options {
@@ -71,11 +69,11 @@
       position: relative;
       display: flex;
       align-items: center;
-      color: #4A4848;
+      color: #4a4848;
       text-decoration: none;
       padding: 24px 16px;
       background-color: #fafafa;
-      border: 1px solid #EBEBEB;
+      border: 1px solid #ebebeb;
 
       &:not(:first-child) {
         border-top: none;
@@ -94,7 +92,7 @@
 
         .emails {
           font-size: 12px;
-          color: #A1A1A1;
+          color: #a1a1a1;
           display: flex;
           flex-direction: column;
           margin-top: 4px;
@@ -103,9 +101,7 @@
             display: block;
             // margin-bottom: 4px;
           }
-
         }
-
       }
 
       &::after {
@@ -114,11 +110,11 @@
         height: 12px;
         width: 10px;
         background-size: contain;
-        content: ' ';
-        background-image: url('https://www.securew2.net/wp-content/uploads/2020/11/right-arrow@3x.png');
+        content: " ";
+        background-image: url("https://www.securew2.net/wp-content/uploads/2020/11/right-arrow@3x.png");
         background-repeat: no-repeat;
         z-index: 2;
-        opacity: .8;
+        opacity: 0.8;
       }
 
       @include sm {
@@ -126,7 +122,6 @@
           display: none;
         }
       }
-
     }
 
     .choose {
@@ -134,7 +129,7 @@
       display: block;
       text-decoration: none;
       font-weight: 700;
-      color: #C02524;
+      color: #c02524;
     }
   }
 }
