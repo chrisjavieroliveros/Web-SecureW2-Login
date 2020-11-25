@@ -58,17 +58,6 @@
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var username = getQuery("username");
-            username = username != null ? decodeURIComponent(username) : null;
-            document.getElementById("username").value = username;
-        }, false);
-        var host = httpGet('mgmtPortalHost');
-        document.getElementById('privacyPolicy').href = host + "/public/general/privacy-policy.html";
-        document.getElementById('termsAndConditions').href = host + "/public/general/termsAndConditions.html";
-    </script>
-
 </body>
 
 </html>
