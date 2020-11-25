@@ -60,12 +60,14 @@
           }
 
           td {
+            margin-top: 8px;
+
             input {
               &[type="text"],
               &[type="email"],
               &[type="password"] {
-                padding-left: 45px;
                 margin-bottom: 8px;
+                padding-left: 45px;
               }
 
               &[type="checkbox"] {
@@ -80,16 +82,17 @@
               margin-top: 12px;
               margin-bottom: -12px;
               font-weight: 800;
-              color: #4a4848;
+              color: #c02524;
             }
           }
 
-          &:first-child td {
-            text-align: center;
+          &:first-child {
+            td {
+              text-align: center;
+            }
           }
 
           &:last-child td {
-            padding-top: 10px;
             text-align: center;
           }
         }
