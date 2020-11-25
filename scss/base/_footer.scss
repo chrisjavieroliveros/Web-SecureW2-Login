@@ -3,48 +3,97 @@
     e.g. <footer></footer>, .footer
 */
 
+
 footer {
     position: relative;
     width: 100%;
     background-color: white;
     z-index: 2;
+}
 
-    .footer-container {
-        height: 56px;
-        display: flex;
+footer .footer-container {
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 80px;
+}
+
+footer .footer-container .left {
+    display: flex;
+}
+
+footer .footer-container .left a {
+    margin-left: 4px;
+}
+
+footer .footer-container .policy {
+    display: flex;
+}
+
+footer .footer-container .policy a {
+    margin: 0 8px;
+    font-weight: normal;
+    color: #4A4848;
+}
+
+
+@include sm {
+    footer .footer-container {
+        height: 74px;
+        padding: 16px 24px;
+        flex-direction: column;
         align-items: center;
-        justify-content: space-between;
-        padding: 16px 80px;
-
-        .left {
-            display: flex;
-
-            a {
-                margin-left: 4px;
-            }
-        }
-
-        .policy {
-            display: flex;
-
-            a {
-                margin: 0 8px;
-                font-weight: normal;
-                color: #4A4848;
-            }
-        }
     }
 
-    @include sm {
-        .footer-container {
-            height: 74px;
-            padding: 16px 24px;
-            flex-direction: column;
-            align-items: center;
-
-            .left {
-                margin-bottom: 4px;
-            }
-        }
+    footer .footer-container .left {
+        margin-bottom: 4px;
     }
 }
+
+
+
+// footer {
+//     position: relative;
+//     width: 100%;
+//     background-color: white;
+//     z-index: 2;
+
+//     .footer-container {
+//         height: 56px;
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         padding: 16px 80px;
+
+//         .left {
+//             display: flex;
+
+//             a {
+//                 margin-left: 4px;
+//             }
+//         }
+
+//         .policy {
+//             display: flex;
+
+//             a {
+//                 margin: 0 8px;
+//                 font-weight: normal;
+//                 color: #4A4848;
+//             }
+//         }
+//     }
+
+//     @include sm {
+//         .footer-container {
+//             height: 74px;
+//             padding: 16px 24px;
+//             flex-direction: column;
+//             align-items: center;
+
+//             .left {
+//                 margin-bottom: 4px;
+//             }
+//         }
+//     }
+// }
