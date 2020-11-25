@@ -49,7 +49,6 @@
 
       table {
         tr {
-
           &:nth-child(1) td img,
           &:nth-child(2) td img {
             position: absolute;
@@ -59,61 +58,42 @@
             width: 20px;
             background-size: contain;
           }
+
+          td {
+            input {
+              &[type="text"],
+              &[type="email"],
+              &[type="password"] {
+                padding-left: 45px;
+                margin-bottom: 8px;
+              }
+
+              &[type="checkbox"] {
+                width: max-content;
+                margin-bottom: 8px;
+              }
+            }
+
+            #tc {
+              position: relative;
+              display: contents;
+              margin-top: 12px;
+              margin-bottom: -12px;
+              font-weight: 800;
+              color: #4a4848;
+            }
+          }
+
+          &:first-child td {
+            text-align: center;
+          }
+
+          &:last-child td {
+            padding-top: 10px;
+            text-align: center;
+          }
         }
       }
     }
   }
-}
-
-#loginContainer input[type="email"] :-ms-input-placeholder,
-#loginContainer input[type="email"] ::placeholder,
-#loginContainer input[type="email"] ::-webkit-input-placeholder,
-#loginContainer input[type="password"] :-ms-input-placeholder,
-#loginContainer input[type="password"] ::placeholder,
-#loginContainer input[type="password"] ::-webkit-input-placeholder,
-#loginContainer input[type="text"] :-ms-input-placeholder,
-#loginContainer input[type="text"] ::placeholder,
-#loginContainer input[type="text"] ::-webkit-input-placeholder,
-#loginContainer input[type="tel"] :-ms-input-placeholder,
-#loginContainer input[type="tel"] ::placeholder,
-#loginContainer input[type="tel"] ::-webkit-input-placeholder {
-  /* Internet Explorer 10-11 */
-  color: #a1a1a1;
-  font-size: 14px;
-}
-
-#loginContainer input[type="submit"] {
-  width: 100%;
-  font-family: "Roboto", sans-serif;
-  border: 1px solid transparent;
-  padding: 14px 16px;
-  background-color: #b6121b;
-  font-weight: 700;
-  color: #ffffff;
-  border-radius: 3px;
-}
-
-#loginContainer input[type="submit"]:hover,
-#loginContainer input[type="submit"]:focus {
-  background-color: #9b1d1c;
-  cursor: pointer;
-  outline: none;
-}
-
-#loginContainer table tr:last-child a {
-  position: relative;
-  display: contents;
-  margin-top: 12px;
-  margin-bottom: -12px;
-  font-weight: 800;
-  color: #4a4848;
-}
-
-#loginContainer table tr:first-child td {
-  text-align: center;
-}
-
-#loginContainer table tr:last-child td {
-  padding-top: 10px;
-  text-align: center;
 }
