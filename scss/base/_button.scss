@@ -4,19 +4,18 @@
 */
 
 %button-default {
-  cursor: pointer;
+    cursor: pointer;
 
-  &:disabled,
-  &.disabled {
-    pointer-events: none;
-  }
+    &:disabled,
+    &.disabled {
+        pointer-events: none;
+    }
 }
 
 .button,
 button {
-  @extend %button-default;
+    @extend %button-default;
 }
-
 
 button,
 a {
@@ -60,15 +59,15 @@ a {
             }
         }
 
-        &.outline{
+        &.outline {
             border: 1px solid getColor(Gray);
-            background-color: transparent!important;
-            color: getColor(Coal)!important;
+            background-color: transparent !important;
+            color: getColor(Coal) !important;
             // padding: 14px 28px;
 
-            &:hover{
-                background-color: getColor(Dark)!important;
-                color: getColor(Light)!important;
+            &:hover {
+                background-color: getColor(Dark) !important;
+                color: getColor(Light) !important;
             }
         }
 

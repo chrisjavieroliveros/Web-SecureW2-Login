@@ -13,6 +13,7 @@
 </head>
 
 <body>
+
 	<div ng-controller="login_ctrl" id="container">
 		<div id="logoContainer">
 			<img src="images/logo.png" />
@@ -54,6 +55,7 @@
 			<a id="resetPassword" href="#">Forgot your password? Reset it here</a>
 		</div>
 	</div>
+
 	<footer>
 		<div class="footer-container">
 			<span class="left">Powered by <a href="https://www.securew2.com/">SecureW2</a></span>
@@ -63,6 +65,7 @@
 			</div>
 		</div>
 	</footer>
+
 	<script>
 		var host = httpGet('mgmtPortalHost');
 		document.getElementById('privacyPolicy').href = host + "/public/general/privacy-policy.html";
@@ -70,6 +73,7 @@
 		document.getElementById('tc').href = host + "/public/general/termsAndConditions.html";
 		document.getElementById('resetPassword').href = host + "/resetpassword/";
 	</script>
+
 </body>
 
 </html>

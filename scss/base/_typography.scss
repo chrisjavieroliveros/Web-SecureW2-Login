@@ -27,7 +27,7 @@ a {
   color: #C02524;
 
   &:hover {
-      text-decoration: underline;
+    text-decoration: underline;
   }
 }
 
@@ -70,8 +70,4 @@ h5 {
 
 h6 {
   font-size: 1em;
-}
-
-.section-heading {
-  margin-bottom: $size-3;
 }
