@@ -23,84 +23,45 @@
 
   #feedbackContainer {
     height: 36px;
+
+    div {
+      padding-top: 5px;
+      padding-bottom: 10px;
+    }
+
+    span {
+      padding-left: 10px;
+      color: #b6121b;
+    }
   }
 
-}
+  #loginContainer {
+    width: 100%;
+    max-width: 400px;
+    background: #ffffff;
+    padding: 32px 24px;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
 
+    form {
+      margin: 0;
 
-
-#container #feedbackContainer div {
-  padding-top: 5px;
-  padding-bottom: 10px;
-}
-
-#container #feedbackContainer span {
-  padding-left: 10px;
-  color: #b6121b;
-}
-
-#container #loginContainer {
-  width: 100%;
-  max-width: 400px;
-  background: #ffffff;
-  padding: 32px 24px;
-  border: 1px solid #EBEBEB;
-  border-radius: 4px;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
-}
-
-/* Login Div and Form Inputs */
-#loginDiv {
-  /* Input Resets for LoginDiv */
-}
-
-#loginContainer form {
-  margin: 0;
-}
-
-#loginContainer table {
-  width: 100%;
-}
-
-#loginContainer table tr {
-  /* Select first two <tr> for Username and Password Icons */
-  /* Icon for Username */
-  /* Icon for Username */
-  /* Forget your Password table row */
-}
-
-#loginContainer table tr:nth-child(1) td img,
-#loginContainer table tr:nth-child(2) td img {
-  position: absolute;
-  margin-top: 15px;
-  margin-left: 15px;
-  height: 20px;
-  width: 20px;
-  background-size: contain;
-}
-
-#loginContainer input {
-  width: 100%;
-}
-
-#loginContainer table tr td input[type="text"],
-#loginContainer table tr td input[type="email"],
-#loginContainer table tr td input[type="password"] {
-  padding-left: 45px;
-  margin-bottom: 8px;
-}
-
-#loginContainer input[type="email"],
-#loginContainer input[type="password"],
-#loginContainer input[type="text"],
-#loginContainer input[type="tel"] {
-  font-family: 'Roboto', Tahoma, Verdana, Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  color: #4A4848;
-  padding: 14px 16px;
-  border: 1px solid #EBEBEB;
-  border-radius: 4px;
+      table {
+        tr {
+          &:nth-child(1) td img,
+          &:nth-child(2) td img {
+            position: absolute;
+            margin-top: 15px;
+            margin-left: 15px;
+            height: 20px;
+            width: 20px;
+            background-size: contain;
+          }
+        }
+      }
+    }
+  }
 }
 
 #loginContainer input[type="email"] :-ms-input-placeholder,
@@ -116,25 +77,13 @@
 #loginContainer input[type="tel"] ::placeholder,
 #loginContainer input[type="tel"] ::-webkit-input-placeholder {
   /* Internet Explorer 10-11 */
-  color: #A1A1A1;
+  color: #a1a1a1;
   font-size: 14px;
-}
-
-#loginContainer input[type="email"]:focus,
-#loginContainer input[type="password"]:focus,
-#loginContainer input[type="text"]:focus,
-#loginContainer input[type="tel"]:focus {
-  outline: none;
-}
-
-#loginContainer table tr td input[type="checkbox"] {
-  width: max-content;
-  margin-bottom: 8px;
 }
 
 #loginContainer input[type="submit"] {
   width: 100%;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   border: 1px solid transparent;
   padding: 14px 16px;
   background-color: #b6121b;
@@ -145,7 +94,7 @@
 
 #loginContainer input[type="submit"]:hover,
 #loginContainer input[type="submit"]:focus {
-  background-color: #9B1D1C;
+  background-color: #9b1d1c;
   cursor: pointer;
   outline: none;
 }
@@ -156,7 +105,7 @@
   margin-top: 12px;
   margin-bottom: -12px;
   font-weight: 800;
-  color: #4A4848;
+  color: #4a4848;
 }
 
 #loginContainer table tr:first-child td {
