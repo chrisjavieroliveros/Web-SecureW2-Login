@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/sign-in-url-v2.css">
+  <link rel="stylesheet" href="../assets/css/first-sign-in.css">
 
   <title>New Login: Sign-in URL</title>
 </head>
@@ -25,32 +25,16 @@
             <tr>
               <td align="right"><label for="username">Username :</label></td>
               <td><input type="text" id="username" data-ng-model="credentials.username" size="30" ng-value="identity"
-                  required="" autofocus="" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required"
+                  required="" autofocus="" class="ng-dirty ng-empty ng-invalid ng-invalid-required"
                   value="user@securew2.com"></td>
-            </tr>
-            <tr id="password-error">
-              <td></td>
-              <td><svg aria-hidden="true" class="stUf5b qpSchb" fill="currentColor" focusable="false" width="16px"
-                  height="16px" viewBox="0 0 24 24" xmlns="https://www.w3.org/2000/svg">
-                  <path
-                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z">
-                  </path>
-                </svg>
-                <a ng-href="https://cloud.securew2.com/resetpassword/"
-                  href="https://cloud.securew2.com/resetpassword/">Forgot your password? Reset it here.</a></td>
             </tr>
             <tr>
               <td></td>
               <td><input id="signInButton" type="submit" value="Next"></td>
             </tr>
-
-            <tr>
+            <tr id="password-error">
               <td></td>
-              <td><input type="checkbox" id="toc">I Agree to the <a
-                  href="https://cloud.securew2.com/public/general/termsAndConditions.html" style="display: contents;
-            font-weight: 700;">Terms and Conditions</a><br>
-              </td>
-
+              <td>Couldn't find your Securew2 Account.</td>
             </tr>
           </tbody>
         </table>
@@ -58,10 +42,8 @@
 
     </div>
     <div class="bottom-details">
-      <a ng-href="https://cloud.securew2.com/resetpassword/" href="https://cloud.securew2.com/resetpassword/">Forgot
-        your password? Reset it here.</a>
+      <a ng-href="mailto:support@securew2.com" href="mailto:support@securew2.com">Forgot your email?</a></td>
     </div>
-
   </div>
 
   <footer>

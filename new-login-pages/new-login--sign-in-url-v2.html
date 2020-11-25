@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./assets/css/first-sign-in.css">
+  <link rel="stylesheet" href="../assets/css/sign-in-url-v2.css">
 
   <title>New Login: Sign-in URL</title>
 </head>
@@ -25,24 +25,47 @@
             <tr>
               <td align="right"><label for="username">Username :</label></td>
               <td><input type="text" id="username" data-ng-model="credentials.username" size="30" ng-value="identity"
-                  required="" autofocus="" class="ng-dirty ng-empty ng-invalid ng-invalid-required"
+                  required="" autofocus="" class="ng-pristine ng-untouched ng-empty ng-invalid ng-invalid-required"
                   value="user@securew2.com"></td>
             </tr>
             <tr>
-              <td></td>
-              <td><input id="signInButton" type="submit" value="Next"></td>
+              <td align="right"><label for="password">Password :</label></td>
+              <td><input type="password" id="password" data-ng-model="credentials.password" autocomplete="off" size="30"
+                  class="ng-valid ng-touched ng-not-empty ng-dirty ng-valid-parse" value="password"></td>
             </tr>
             <tr id="password-error">
               <td></td>
-              <td>Couldn't find your Securew2 Account.</td>
+              <td>Wrong password. Try again or click Forgot Password below to reset it.</td>
             </tr>
           </tbody>
         </table>
       </form>
 
+      <form>
+        <table>
+          <tr>
+            <td><input id="signInButton2" type="submit" value="Go Back"></td>
+            <td><input id="signInButton" type="submit" value="Sign In"></td>
+          </tr>
+        </table>
+      </form>
+
+      <form>
+        <table>
+          <tr>
+            <td></td>
+            <td><input type="checkbox" id="toc">I Agree to the <a
+                href="https://cloud.securew2.com/public/general/termsAndConditions.html" style="display: contents;
+          font-weight: 700;">Terms and Conditions</a><br>
+            </td>
+          </tr>
+        </table>
+      </form>
+
     </div>
     <div class="bottom-details">
-      <a ng-href="mailto:support@securew2.com" href="mailto:support@securew2.com">Forgot your email?</a></td>
+      <a ng-href="https://cloud.securew2.com/resetpassword/" href="https://cloud.securew2.com/resetpassword/">Forgot
+        your password? Reset it here.</a></td>
     </div>
   </div>
 
