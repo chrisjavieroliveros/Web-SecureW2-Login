@@ -3,6 +3,43 @@
     e.g. select, input[type="text"], input[type="email"], input[type="number"]
 */
 
+input {
+  width: 100%;
+
+  &[type="text"],
+  &[type="email"],
+  &[type="password"],
+  &[type="tel"] {
+    font-family: "Roboto", Tahoma, Verdana, Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    color: #4a4848;
+    padding: 14px 16px;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &[type="text"],
+  &[type="email"],
+  &[type="password"] {
+    // outline: 1px solid red;
+    padding-left: 45px;
+    margin-bottom: 8px;
+  }
+
+  &[type="checkbox"] {
+    width: max-content;
+    margin-bottom: 8px;
+  }
+
+  &[type="submit"] {
+  }
+}
+
 // input {
 
 //     &[data-ng-model='credentials.username'],
