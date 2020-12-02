@@ -79,8 +79,10 @@
 
                 &:nth-child(2) {
                   margin-top: 8px;
+
                   td {
                     font-size: 14px;
+                    color: #4a4848b5;
                   }
                 }
 
@@ -99,7 +101,7 @@
                         border: 1px solid transparent;
                         border-radius: 3px;
                         background-color: #b6121b;
-                        margin-top: 12px;
+                        margin-top: 16px;
                       }
                     }
                   }
@@ -113,6 +115,10 @@
                       width: 100%;
                       text-align: center;
                       margin-top: 12px;
+
+                      a {
+                        font-size: 14px;
+                      }
                     }
                   }
                 }
