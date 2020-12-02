@@ -1,0 +1,109 @@
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;" />
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" />
+  <link rel="stylesheet" href="https://jqueryui.com/jquery-wp-content/themes/jqueryui.com/style.css" />
+
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <title>SecureW2 Management Portal</title>
+  <link rel="stylesheet" href="./assets/css/device-auth.css">
+
+</head>
+
+<body data-new-gr-c-s-check-loaded="14.984.0" data-gr-ext-installed="">
+  <div id="progressbar_bysy_overlay" class="bysy_overlay"></div>
+
+  <div id="bysy_overlay" class="bysy_overlay" style="display: none"></div>
+
+  <div id="bysy_container" class="bysy_container" style="display: none">
+    <div id="bysy_content" class="bysy_content">
+      <div id="bysy_dialog" class="bysy_dialog">
+        <img src="https://cloud.securew2.com/images/ajaxloader.gif" />
+      </div>
+    </div>
+  </div>
+
+  <div id="container">
+    <div id="header">
+      <div id="logo">
+        <a href="/"><img src="https://www.securew2.net/wp-content/uploads/2018/01/SecureW2-Logo.svg"
+            style="padding-top: 30px" /></a>
+      </div>
+
+      <div id="mainMenu">
+        <div id="id5">
+          <ul class="sf-menu sf-horizontal"></ul>
+        </div>
+      </div>
+      <div id="mainOrganization">
+        <div id="selectedOrganization"></div>
+      </div>
+      <div id="mainTitle">
+        <h4>SecureW2 Management Portal</h4>
+      </div>
+    </div>
+
+    <div id="content">
+      <form id="id2" method="post" action="./?5-1.IFormSubmitListener-newDeviceAuthForm">
+        <div style="
+              width: 0px;
+              height: 0px;
+              position: absolute;
+              left: -100px;
+              top: -100px;
+              overflow: hidden;
+            ">
+          <input type="hidden" name="id2_hf_0" id="id2_hf_0" />
+        </div>
+        <span id="id6"> </span>
+        <div id="id7">
+          <fieldset>
+            <legend>New device Authentication</legend>
+            <table>
+              <tbody>
+                <tr>
+                  <td>Authentication code:</td>
+                  <td>
+                    <input type="text" autofocus="" maxlength="6" onkeyup="numericFilter(this);" value=""
+                      name="newDeviceAuthContainer:authCode" />
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td>Enter the code from your e-mail.</td>
+                </tr>
+
+                <tr>
+                  <td></td>
+                  <td>
+                    <button type="submit" name="newDeviceAuthContainer:verifyAuthCodeButton" id="id3">
+                      Verify Code
+                    </button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td></td>
+                  <td>
+                    <a href="javascript:;" id="id4">Didn't receive your code? Resend Code</a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </fieldset>
+        </div>
+      </form>
+    </div>
+
+    <div style="clear: both"></div>
+
+    <div id="footer">cloud.securew2.com (5.31.1.GA1)</div>
+  </div>
+</body>
+
+</html>
