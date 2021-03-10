@@ -1,8 +1,7 @@
 <html ng-app="login_app">
-
-<head>
+  <head>
     <title ng-bind="header"></title>
-    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/main-login.css" />
     <style type="text/css"></style>
@@ -10,54 +9,85 @@
     <script src="js/app.js"></script>
     <link rel="stylesheet" href="js/ngProgress.css" />
     <script type="text/javascript" src="js/ngprogress.js"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div ng-controller="login_ctrl" id="container">
-        <div id="logoContainer">
-            <img src="images/logo.png" />
+      <div id="logoContainer">
+        <img src="images/logo.png" />
+      </div>
+      <div id="feedbackContainer">
+        <div ng-cloak ng-show="error">
+          <img src="images/exclamationmark_16.png" /><span id="errorMessage"
+            >Username is incorrect. Please try again.</span
+          >
         </div>
-        <div id="feedbackContainer">
-            <div ng-cloak ng-show="error">
-                <img src='images/exclamationmark_16.png' /><span id="errorMessage">Username is incorrect. Please try
-                    again.</span>
-            </div>
-        </div>
-        <div id="loginContainer">
-            <div class="signin-heading"><span>Sign In</span></div>
+      </div>
+      <div id="loginContainer">
+        <div class="signin-heading"><span>Sign In</span></div>
 
-            <form role="form" name="userForm" ng-submit="login(userForm.$valid)" autocomplete="off" novalidate>
-                <table>
-                    <tr>
-                        <td><img src="images/icon-user.png" /><input type="text" id="username" name="username"
-                                placeholder="Username" size="30" required="" autofocus></td>
-                    </tr>
-                    <tr>
-                        <td><input type="submit" value="Next" ng-disabled="userForm.$invalid"></td>
-                    </tr>
-                </table>
-            </form>
-        </div>
+        <form
+          role="form"
+          name="userForm"
+          ng-submit="login(userForm.$valid)"
+          autocomplete="off"
+          novalidate
+        >
+          <table>
+            <tr>
+              <td>
+                <img src="images/icon-user.png" /><input
+                  type="text"
+                  id="username"
+                  name="username"
+                  placeholder="Username"
+                  size="30"
+                  required=""
+                  autofocus
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="submit"
+                  value="Next"
+                  ng-disabled="userForm.$invalid"
+                />
+              </td>
+            </tr>
+          </table>
+        </form>
+      </div>
     </div>
     <footer>
-        <div class="footer-container">
-            <span class="left">Powered by <a href="https://www.securew2.com/" target="_newTab">SecureW2</a></span>
-            <div class="policy">
-                <a id="privacyPolicy" href="#" target="_newTab">Privacy Policy</a>
-            </div>
+      <div class="footer-container">
+        <span class="left"
+          >Powered by
+          <a href="https://www.securew2.com/" target="_newTab"
+            >SecureW2</a
+          ></span
+        >
+        <div class="policy">
+          <a id="privacyPolicy" href="#" target="_newTab">Privacy Policy</a>
         </div>
+      </div>
     </footer>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var username = getQuery("username");
-            username = username != null ? decodeURIComponent(username) : null;
-            document.getElementById("username").value = username;
-        }, false);
-        httpGet('mgmtPortalHost', function setHost(host) {
-            document.getElementById('privacyPolicy').href = host + "/public/general/privacy-policy.html";
-        });
+      document.addEventListener(
+        'DOMContentLoaded',
+        function () {
+          var username = getQuery('username');
+          username = username != null ? decodeURIComponent(username) : null;
+          document.getElementById('username').value = username;
+        },
+        false
+      );
+      httpGet('mgmtPortalHost', function setHost(host) {
+        document.getElementById('privacyPolicy').href =
+          host + '/public/general/privacy-policy.html';
+      });
     </script>
-</body>
-
+  </body>
 </html>
